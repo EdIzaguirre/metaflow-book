@@ -1,0 +1,43 @@
+[MFLOG|0|2024-04-23T21:26:09.929722Z|runtime|d930a01b-1e10-4440-9db0-6d6577774062]<flow ClassifierTrainFlow step train_svm> failed:
+[MFLOG|0|2024-04-23T21:26:09.939692Z|runtime|c18d842e-0fc1-481b-80d2-66125ad836b2]    Internal error
+[MFLOG|0|2024-04-23T21:26:09.941916Z|runtime|adcd2190-0b5e-41e8-b867-efdfe9968b53]Traceback (most recent call last):
+[MFLOG|0|2024-04-23T21:26:09.942203Z|runtime|27e6f865-66d4-4c61-a4e9-0991bc6c73de]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-23T21:26:09.942275Z|runtime|8376ec81-e356-4ba1-afd6-85eb5d9a38a0]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-23T21:26:09.942327Z|runtime|701c65dd-a3e6-4b7b-b341-43d5897692b1]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-23T21:26:09.942368Z|runtime|3bebbdfe-8225-4726-a606-cf42b631bd0d]    return func(args, kwargs)
+[MFLOG|0|2024-04-23T21:26:09.942517Z|runtime|cafb2160-e449-46fe-91b5-4d197542d251]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:09.942569Z|runtime|e693783d-770e-4fe8-9e06-046c0524afa0]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-23T21:26:09.942607Z|runtime|a8aff387-9860-4e65-bda5-38bdba25aa4f]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-23T21:26:09.942644Z|runtime|60aa41d1-f14e-45d7-b672-d8847a5f2d65]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:09.942680Z|runtime|e2055b3a-1652-4ce4-a73e-55043b37a4d9]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-23T21:26:09.942719Z|runtime|5fec26ea-e18c-48e9-a3ae-fd78a13db077]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-23T21:26:09.942754Z|runtime|241fa76d-3c93-40ca-86c3-6e02976d5b8e]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:09.942790Z|runtime|08c32eff-d179-4d0d-a744-59b3519f9ec8]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-23T21:26:09.942826Z|runtime|8f75e766-ba82-46cb-8ce5-1443d103af29]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-23T21:26:09.942860Z|runtime|ecdfd3e9-be3c-467c-8930-b407e146fd9b]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:09.942894Z|runtime|184db933-b3e4-4377-8b96-36a9c1f8883d]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-23T21:26:09.942930Z|runtime|087e2a02-0c74-45b4-8ec2-cbf11639d8d7]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-23T21:26:10.033131Z|runtime|b1e85bb1-b0e9-4ae2-b744-f71d9f90e586]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:10.033332Z|runtime|2dedddf7-d535-43fd-b927-b3c603ab03f7]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-23T21:26:10.033384Z|runtime|97892b29-ee60-4f5b-beb9-7a8a052fe4a8]    return callback(args, kwargs)
+[MFLOG|0|2024-04-23T21:26:10.033421Z|runtime|32bc6beb-4eff-4150-8566-c6976817ea12]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:10.033456Z|runtime|3fc85de8-45f7-42ee-ae3f-fa0525dd4ea1]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-23T21:26:10.033488Z|runtime|bd1f56b3-3d5c-4e3f-b4a2-0463020b6281]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-23T21:26:10.033520Z|runtime|04302853-51b0-4705-a1fa-c6371cf4a618]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-23T21:26:10.033551Z|runtime|eb0b8bca-b808-4108-9d25-199059235d5b]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-23T21:26:10.033583Z|runtime|27bfc66a-1a2b-4e19-aac9-b6923d3f91db]    task.run_step(
+[MFLOG|0|2024-04-23T21:26:10.033614Z|runtime|ec3d465d-8e4d-49ad-bc48-f9d5c617c229]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-23T21:26:10.033644Z|runtime|0c0e913a-7aa6-47c7-9c3d-b9c025a31632]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-23T21:26:10.033674Z|runtime|a88455d4-b152-484e-aaaf-8c513f928254]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-23T21:26:10.033705Z|runtime|dbd34eb1-b9cc-4ba5-8f6c-788876321d7c]    step_function()
+[MFLOG|0|2024-04-23T21:26:10.033736Z|runtime|280cd203-6fa2-4ad3-bafd-3ec0654bd7d8]  File "/Users/ed/Developer/NoOps Machine Learning/metaflow-book/Chapter 3/classifier_train_v1.py", line 28, in train_svm
+[MFLOG|0|2024-04-23T21:26:10.033766Z|runtime|e9594556-fee2-4927-b3ec-5f67455d69d4]    self.model.fit(self.train_data, self.train_labels)
+[MFLOG|0|2024-04-23T21:26:10.033795Z|runtime|44197f7a-17ae-4361-b42b-268b8913543a]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/sklearn/base.py", line 1467, in wrapper
+[MFLOG|0|2024-04-23T21:26:10.033824Z|runtime|b235d249-a1c4-4cff-b391-af6e74e6844a]    estimator._validate_params()
+[MFLOG|0|2024-04-23T21:26:10.033853Z|runtime|9e96b05d-3f98-4a25-aba1-7411a8084617]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/sklearn/base.py", line 666, in _validate_params
+[MFLOG|0|2024-04-23T21:26:10.033883Z|runtime|5f55b1fc-0a79-4cc1-8b45-b95554140259]    validate_parameter_constraints(
+[MFLOG|0|2024-04-23T21:26:10.033912Z|runtime|c3241028-e022-4807-919b-2cd0de3997c7]  File "/Users/ed/miniconda3/envs/noops/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+[MFLOG|0|2024-04-23T21:26:10.033942Z|runtime|9d83e80e-5e66-4a5c-bfaa-433ab733b269]    raise InvalidParameterError(
+[MFLOG|0|2024-04-23T21:26:10.033970Z|runtime|c4c0e880-ffa7-4e9c-bc8a-c45bef782f15]sklearn.utils._param_validation.InvalidParameterError: The 'kernel' parameter of SVC must be a str among {'linear', 'rbf', 'sigmoid', 'poly', 'precomputed'} or a callable. Got 'polynomial' instead.
+[MFLOG|0|2024-04-23T21:26:10.034002Z|runtime|12cf0c44-a506-4b1e-866f-a5ea7097ec42]
+[MFLOG|0|2024-04-23T21:26:10.034435Z|runtime|ff7add07-3872-415e-90c9-ca51ff1a0e3a]Task failed.
